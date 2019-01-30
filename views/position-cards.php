@@ -13,6 +13,7 @@
     ?>
 
     <div class="uk-panel <?= $widget->theme['panel'] ?> <?= $widget->theme['alignment'] ? 'uk-text-center' : '' ?> <?= $contrast ? 'uk-contrast' : '' ?> <?= $widget->theme['contrast_alt_widgets'] ? 'uk-contrast' : '' ?> <?= $widget->theme['html_class'] ?>">
+      <div class="tm-border">
 
         <?php if (!$widget->theme['title_hide']) : ?>
         <h3 class="<?= $widget->theme['title_size'] ?>"><?= $widget->title ?></h3>
@@ -20,6 +21,7 @@
 
         <?= $widget->get('result') ?>
 
+      </div>
     </div>
 
 </div>

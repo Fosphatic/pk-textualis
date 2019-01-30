@@ -2,7 +2,7 @@
 
 return [
 
-    'name' => 'uikit3-theme-cards',
+    'name' => 'textualis-theme',
 
     'type' => 'theme',
 
@@ -64,6 +64,7 @@ return [
         'title_hide' => false,
         'title_size' => 'uk-panel-title',
         'alignment' => '',
+        'contrast_alt_widgets' => '',
         'html_class' => '',
         'sidebar_margin' => false,
         'panel' => 'uk-panel-box'
@@ -128,6 +129,7 @@ return [
                 if ($params['contrast'] && $params['logo_contrast']) {
                     $params['logo'] = $params['logo_contrast'];
                 }
+
 
             } else {
                 $params['contrast'] = false;

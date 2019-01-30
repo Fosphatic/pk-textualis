@@ -12249,8 +12249,9 @@ html {
      content: "";
      width: 25%;
      top: 0;
+     right: 0;
      height: 5px;
-     background: #a3b03a;
+     background: #d1603d;
      position: absolute;
      margin-left: -30px;
  }
@@ -12258,8 +12259,9 @@ html {
      content: "";
      width: 5px;
      top: 0;
+     right: 0;
      height: 25%;
-     background: #a3b03a;
+     background: #d1603d;
      position: absolute;
      margin-left: -30px;
  }
@@ -12268,8 +12270,9 @@ html {
       content: "";
       width: 25%;
       top: 0;
+      right: 0;
       height: 5px;
-      background: #a3b03a;
+      background: #d1603d;
       position: absolute;
       margin-left: -40px;
   }
@@ -12277,9 +12280,60 @@ html {
       content: "";
       width: 5px;
       top: 0;
+      right: 0;
       height: 25%;
-      background: #a3b03a;
+      background: #d1603d;
       position: absolute;
       margin-left: -40px;
   }
+}
+.tm-border::before {
+    content: "";
+    width: 25%;
+    bottom: 0;
+    height: 5px;
+    background: #d1603d;
+    position: absolute;
+    margin-left: -30px;
+}
+.tm-border::after {
+    content: "";
+    width: 5px;
+    bottom: 0;
+    left:0;
+    height: 25%;
+    background: #d1603d;
+    position: absolute;
+}
+@media (min-width: 1200px) {
+ .tm-border::before {
+     content: "";
+     width: 25%;
+     bottom: 0;
+     height: 5px;
+     background: #d1603d;
+     position: absolute;
+     margin-left: -40px;
+ }
+ .tm-border::after {
+     content: "";
+     width: 5px;
+     bottom: 0;
+     left: 0;
+     height: 25%;
+     background: #d1603d;
+     position: absolute;
+ }
+}
+.uk-button {
+  border: 1px solid;
+}
+.uk-panel.uk-contrast.uk-panel.uk-contrast h1,.uk-panel.uk-contrast h2,.uk-panel.uk-contrast h3,.uk-panel.uk-contrast h4,.uk-panel.uk-contrast h5,.uk-panel.uk-contrast h6 {
+    color: #fff;
+}
+.uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h1, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h2, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h3, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h4, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h5, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h6 {
+    color: #333;
+}
+.tm-footer {
+  border-top: 5px solid #d1603d;
 }

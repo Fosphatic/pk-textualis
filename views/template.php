@@ -54,16 +54,19 @@
                 <?php endif ?>
 
                 <?php if ($view->position()->exists('top')) : ?>
-                <section id="tm-top" class="tm-top">
-                    <?= $view->position('top', 'position-grid.php') ?>
+                <section id="tm-top" class="tm-top" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > div > .uk-card; delay: 250; repeat: true">
+                    <?= $view->position('top', 'position-cards.php') ?>
                 </section>
                 <?php endif; ?>
 
-                <div id="tm-main" class="tm-main">
+                <div id="tm-main" class="tm-main" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > div > .uk-card; delay: 500; repeat: true">
+
                   <div class="uk-container uk-container-center">
                     <div class="" data-uk-grid>
                     <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
+                      <div class="tm-border">
                         <?= $view->render('content') ?>
+                      </div>
                     </main>
 
                     <?php if ($view->position()->exists('sidebar')) : ?>
@@ -78,8 +81,8 @@
                 </div>
 
                 <?php if ($view->position()->exists('bottom')) : ?>
-                <section id="tm-bottom" class="tm-bottom">
-                    <?= $view->position('bottom', 'position-grid.php') ?>
+                <section id="tm-bottom" class="tm-bottom" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > div > .uk-card; delay: 250; repeat: true">
+                    <?= $view->position('bottom', 'position-cards.php') ?>
                 </section>
                 <?php endif; ?>
 
