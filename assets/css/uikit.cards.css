@@ -12150,7 +12150,6 @@ html {
     padding-bottom: 30px;
     font-family: 'Lato'
 }
-
 @media (min-width:768px) {
     .tm-footer {
         padding-top: 50px;
@@ -12182,7 +12181,6 @@ html {
         width: 50%
     }
 }
-
 .tm-navbar-center {
   position: absolute;
   left: 50%;
@@ -12242,5 +12240,46 @@ html {
 @media (min-width: 1200px) {
   #tm-bottom {
       padding-top: 40px;
+  }
+}
+/* ========================================================================
+   Textualis Theme Changes
+ ========================================================================== */
+ .uk-card::before {
+     content: "";
+     width: 25%;
+     top: 0;
+     height: 5px;
+     background: #a3b03a;
+     position: absolute;
+     margin-left: -30px;
+ }
+ .uk-card::after {
+     content: "";
+     width: 5px;
+     top: 0;
+     height: 25%;
+     background: #a3b03a;
+     position: absolute;
+     margin-left: -30px;
+ }
+ @media (min-width: 1200px) {
+  .uk-card::before {
+      content: "";
+      width: 25%;
+      top: 0;
+      height: 5px;
+      background: #a3b03a;
+      position: absolute;
+      margin-left: -40px;
+  }
+  .uk-card::after {
+      content: "";
+      width: 5px;
+      top: 0;
+      height: 25%;
+      background: #a3b03a;
+      position: absolute;
+      margin-left: -40px;
   }
 }
