@@ -12328,10 +12328,13 @@ html {
 .uk-button {
   border: 1px solid;
 }
-.uk-panel.uk-contrast.uk-panel.uk-contrast h1,.uk-panel.uk-contrast h2,.uk-panel.uk-contrast h3,.uk-panel.uk-contrast h4,.uk-panel.uk-contrast h5,.uk-panel.uk-contrast h6 {
+.uk-panel.uk-contrast.uk-panel.uk-contrast h1,.uk-panel.uk-contrast h2,.uk-panel.uk-contrast h3,.uk-panel.uk-contrast h4,.uk-panel.uk-contrast h5,.uk-panel.uk-contrast h6, .uk-panel.uk-contrast p, .uk-panel.uk-contrast a {
     color: #fff;
 }
 .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h1, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h2, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h3, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h4, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h5, .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover h6 {
+    color: #333;
+}
+.uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover a {
     color: #333;
 }
 .tm-footer {
