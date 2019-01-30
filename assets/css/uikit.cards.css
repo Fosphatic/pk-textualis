@@ -12337,6 +12337,9 @@ html {
 .uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover a {
     color: #333;
 }
+.uk-panel.uk-card.uk-card-hover.uk-card-body.uk-contrast:hover a:hover {
+    color: #0f6ecd;
+}
 .tm-footer {
   border-top: 5px solid #d1603d;
 }
