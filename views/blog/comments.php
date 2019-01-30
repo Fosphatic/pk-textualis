@@ -106,15 +106,12 @@
                 <div class="uk-alert-danger" uk-alert v-show="form.email.invalid">{{ 'Email invalid.' | trans }}</div>
             </template>
 
-            <div class="uk-form-row">
-                <label for="form-comment" class="uk-form-label">{{ 'Comment' | trans }}</label>
+            <div class="uk-margin">
                 <div class="uk-form-controls">
-                    <textarea id="form-comment" class="uk-form-width-large" name="content" rows="10" v-model="content" v-validate:required></textarea>
-
-                    <p class="uk-form-help-block uk-text-danger" v-show="form.content.invalid">{{ 'Comment cannot be blank.' | trans }}</p>
+                    <textarea id="form-comment" class="uk-textarea uk-form-width-large" placeholder="{{ 'Comment' | trans }}" name="content" rows="10" v-model="content" v-validate:required></textarea>
                 </div>
             </div>
-
+            <div class="uk-alert-danger" uk-alert v-show="form.content.invalid">{{ 'Comment cannot be blank.' | trans }}</div>
             <p>
                 <button class="uk-button uk-button-primary" type="submit" accesskey="s">{{ 'Submit' | trans }}</button>
                 <button class="uk-button" accesskey="c" v-if="parent" @click.prevent="cancel">{{ 'Cancel' | trans }}</button>
