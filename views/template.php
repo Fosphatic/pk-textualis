@@ -61,7 +61,7 @@
 
                 <div id="tm-main" class="tm-main" uk-scrollspy="cls: uk-animation-slide-bottom-small; target: > div > div > .uk-card; delay: 500; repeat: true">
 
-                  <div class="uk-container uk-container-center">
+                  <div class="uk-container uk-container-center" uk-height-viewport="expand: true">
                     <div class="" data-uk-grid>
                     <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
                       <div class="tm-border">
