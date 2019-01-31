@@ -22,6 +22,7 @@ return [
     'menus' => [
 
         'main' => 'Main',
+        'secondary' => 'Secondary',
         'offcanvas' => 'Offcanvas'
 
     ],

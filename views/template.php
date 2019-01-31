@@ -13,29 +13,22 @@
     <body>
 
         <div class="tm-background uk-background-cover" <?= $params['image'] ? "class=\"uk-background-cover\" style=\"background-image: url('{$view->url($params['image'])}');\"" : '' ?>>
-            <div class="uk-container uk-container-center">
+          <div class="uk-container uk-container-center tm-opacity">
 
                 <?php if ($params['logo'] || $view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
                 <div class="tm-header uk-flex uk-flex-middle uk-flex-column">
 
                     <a class="tm-logo uk-hidden@m uk-navbar-item uk-logo" href="<?= $view->url()->get() ?>">
                         <?php if ($params['logo']) : ?>
-                            <img src="<?= $this->escape($params['logo']) ?>" alt="">
+                            <img class="brand-logo" src="<?= $this->escape($params['logo']) ?>" alt="" uk-svg>
                         <?php else : ?>
                             <?= $params['title'] ?>
                         <?php endif ?>
                     </a>
 
-                    <nav class="uk-navbar <?= ($params['contrast']) ? 'tm-navbar-contrast' : '' ?>" data-uk-navbar>
-
-                        <?php if ($params['logo']) : ?>
-                        <div class="tm-navbar-center">
-                        <a class="tm-logo uk-visible@m" href="<?= $view->url()->get() ?>">
-                            <img class="uk-responsive-height" src="<?= $this->escape($params['logo']) ?>" alt="">
-                        </a>
-                        </div>
-                        <?php endif ?>
-
+                    <nav class="uk-navbar-container uk-navbar-transparent uk-margin <?= ($params['contrast']) ? 'tm-navbar-contrast' : '' ?>" data-uk-navbar>
+                      <div class="uk-navbar-center">
+                        <div class="uk-navbar-center-left"><div>
                         <?php if ($view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
                         <div class="uk-visible@m">
                             <?= $view->menu('main', 'menu-navbar.php') ?>
@@ -48,7 +41,17 @@
                             <a href="#offcanvas-nav" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
                         </div>
                         <?php endif ?>
+                        </div></div>
+                        <?php if ($params['logo']) : ?>
 
+                        <a class="uk-navbar-item uk-logo uk-visible@m" href="<?= $view->url()->get() ?>">
+                            <img class="uk-responsive-height brand-logo" src="<?= $this->escape($params['logo']) ?>" alt="" uk-svg>
+                        </a>
+
+                        <?php endif ?>
+                         <div class="uk-navbar-center-right"><div>
+                        </div></div>
+                      </div>
                     </nav>
                 </div>
                 <?php endif ?>

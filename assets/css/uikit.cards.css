@@ -12065,12 +12065,18 @@ html {
 
 @media (min-width:768px) {
     .tm-background {
-        padding-top: 50px;
-        padding-bottom: 50px
+        padding-top: 25px;
+        padding-bottom: 25px
     }
 }
 
 @media (min-width:960px) {
+    .tm-background {
+        padding-top: 50px;
+        padding-bottom: 50px
+    }
+}
+@media (min-width:1200px) {
     .tm-background {
         padding-top: 70px;
         padding-bottom: 70px
@@ -12342,4 +12348,31 @@ html {
 }
 .tm-footer {
   border-top: 5px solid #d1603d;
+}
+.brand-logo {
+    width: 130px;
+}
+@media (min-width: 1024px) {
+  .brand-logo {
+    width: 170px;
+  }
+  .uk-navbar-center-left, .uk-navbar-center-right {
+    position: absolute;
+    top: 25px;
+  }
+}
+.uk-navbar-nav {
+    padding-top: 25px;
+  }
+  .uk-navbar-nav > li.uk-active > a {
+      color: #39f;
+  }
+  .uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+    font-size: 1.3rem;
+}
+.uk-navbar-nav > li > a, .uk-navbar-item, .uk-navbar-toggle {
+  display: initial;
+}
+.tm-opacity {
+  opacity: .97;
 }
