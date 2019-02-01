@@ -12251,7 +12251,7 @@ html {
 /* ========================================================================
    Textualis Theme Changes
  ========================================================================== */
- .uk-card::before {
+ .tm-border-top::before {
      content: "";
      width: 25%;
      top: 0;
@@ -12261,7 +12261,7 @@ html {
      position: absolute;
      margin-left: -30px;
  }
- .uk-card::after {
+ .tm-border-top::after {
      content: "";
      width: 5px;
      top: 0;
@@ -12272,7 +12272,7 @@ html {
      margin-left: -30px;
  }
  @media (min-width: 1200px) {
-  .uk-card::before {
+  .tm-border-top::before {
       content: "";
       width: 25%;
       top: 0;
@@ -12282,7 +12282,7 @@ html {
       position: absolute;
       margin-left: -40px;
   }
-  .uk-card::after {
+  .tm-border-top::after {
       content: "";
       width: 5px;
       top: 0;
@@ -12293,7 +12293,7 @@ html {
       margin-left: -40px;
   }
 }
-.tm-border::before {
+.tm-border-bottom::before {
     content: "";
     width: 25%;
     bottom: 0;
@@ -12302,7 +12302,7 @@ html {
     position: absolute;
     margin-left: -30px;
 }
-.tm-border::after {
+.tm-border-bottom::after {
     content: "";
     width: 5px;
     bottom: 0;
@@ -12312,7 +12312,7 @@ html {
     position: absolute;
 }
 @media (min-width: 1200px) {
- .tm-border::before {
+ .tm-border-bottom::before {
      content: "";
      width: 25%;
      bottom: 0;
@@ -12321,7 +12321,7 @@ html {
      position: absolute;
      margin-left: -40px;
  }
- .tm-border::after {
+ .tm-border-bottom::after {
      content: "";
      width: 5px;
      bottom: 0;
@@ -12331,11 +12331,7 @@ html {
      position: absolute;
  }
 }
-.tm-border:hover::before, .tm-border:hover::after {
-  background: #19f;
-  transition: background-color .5s linear;
-}
-.uk-card:hover::before, .uk-card:hover::after {
+.tm-border-bottom:hover::before, .tm-border-bottom:hover::after, .tm-border-top:hover::before, .tm-border-top:hover::after {
   background: #19f;
   transition: background-color .5s linear;
 }

@@ -73,8 +73,10 @@
                   <div class="uk-container uk-container-center" uk-height-viewport="expand: true">
                     <div class="" data-uk-grid>
                     <main class="<?= $view->position()->exists('sidebar') ? 'uk-width-3-4@m' : 'uk-width-1-1'; ?> <?= $params['background'] ?>">
-                      <div class="tm-border">
+                      <div class="tm-border-bottom">
+                        <div class="tm-border-top">
                         <?= $view->render('content') ?>
+                        </div>
                       </div>
                     </main>
 
