@@ -13,7 +13,7 @@
     <body>
 
         <div class="tm-background uk-background-cover" <?= $params['image'] ? "class=\"uk-background-cover\" style=\"background-image: url('{$view->url($params['image'])}');\"" : '' ?>>
-          <div class="uk-container uk-container-center tm-opacity">
+            <div class="uk-container uk-container-center tm-opacity">
 
                 <?php if ($params['logo'] || $view->menu()->exists('main') || $view->position()->exists('navbar')) : ?>
                 <div class="tm-header uk-flex uk-flex-middle uk-flex-column">
@@ -37,7 +37,7 @@
                         <?php endif ?>
 
                         <?php if ($view->position()->exists('offcanvas') || $view->menu()->exists('offcanvas')) : ?>
-                        <div class="uk-navbar-right uk-hidden@m">
+                        <div class="uk-hidden@m">
                             <a href="#offcanvas-nav" class="uk-navbar-toggle" uk-navbar-toggle-icon uk-toggle="target: #offcanvas-nav"></a>
                         </div>
                         <?php endif ?>
@@ -50,6 +50,12 @@
 
                         <?php endif ?>
                          <div class="uk-navbar-center-right"><div>
+                           <?php if ($view->menu()->exists('secondary') || $view->position()->exists('navbar')) : ?>
+                           <div class="uk-visible@m">
+                               <?= $view->menu('secondary', 'menu-navbar.php') ?>
+                               <?= $view->position('navbar', 'position-blank.php') ?>
+                           </div>
+                           <?php endif ?>
                         </div></div>
                       </div>
                     </nav>
@@ -118,6 +124,7 @@
 
                 <?php if ($view->menu()->exists('offcanvas')) : ?>
                     <?= $view->menu('offcanvas', ['class' => 'uk-nav-offcanvas']) ?>
+                    <?= $view->menu('secondary', ['class' => 'uk-nav-offcanvas']) ?>
                 <?php endif ?>
 
                 <?php if ($view->position()->exists('offcanvas')) : ?>
