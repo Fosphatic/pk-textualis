@@ -12397,3 +12397,17 @@ html {
 .uk-offcanvas-bar {
     opacity: .97;
 }
+.tm-text-large {
+    font-size: 5rem;
+    color: #222;
+}
+.tm-text-large-light {
+    font-size: 5rem;
+    color: #FFF;
+}
+.tm-text-large-light:hover {
+    color: #d1603d;
+}
+.tm-text-large:hover {
+    color: #1e87f0;
+}

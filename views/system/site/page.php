@@ -1,3 +1,5 @@
+<div class="tm-border-bottom">
+  <div class="tm-border-top">
 <article class="uk-article<?= $node->theme['alignment'] ? ' uk-text-center' : '' ?>">
 
     <?php if (!$node->theme['title_hide']) : ?>
@@ -7,3 +9,5 @@
     <?= $page->content ?>
 
 </article>
+  </div>
+</div>

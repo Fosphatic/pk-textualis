@@ -1,4 +1,7 @@
-    <form class="pk-user pk-user-login uk-form uk-form-stacked uk-width-1-2@m uk-width-1-3@l uk-container-center uk-text-center" action="<?= $view->url('@user/authenticate') ?>" method="post">
+<div class="uk-card uk-card-secondary uk-card-body uk-box-shadow-hover-large">
+  <div class="tm-border-bottom">
+                      <div class="tm-border-top">
+    <form class="pk-user pk-user-login uk-form uk-form-stacked uk-width-1-2@m uk-width-1-3@l uk-container-center uk-align-center uk-text-center" action="<?= $view->url('@user/authenticate') ?>" method="post">
 
         <h1 class="uk-h2"><?= __('Sign in to your account') ?></h1>
 
@@ -33,3 +36,6 @@
         <?php $view->token()->get() ?>
 
     </form>
+      </div>
+  </div>
+</div>
